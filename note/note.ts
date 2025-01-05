@@ -27,7 +27,7 @@ export const getNote = api(
   { expose: true, path: "/note/:id", method: "GET" },
   async ({ id }: GetNoteParams): Promise<Note> => {
     const note = await NoteDB.queryRow<Note>`
-      SELECT text, cover_url FROM note
+      SELECT content, cover_url FROM note
       WHERE id = ${id}
     `;
 

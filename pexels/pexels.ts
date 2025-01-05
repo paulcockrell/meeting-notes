@@ -2,6 +2,7 @@ import { APIError, ErrCode, api } from "encore.dev/api";
 import { secret } from "encore.dev/config";
 
 interface Photo {
+  id: number;
   src: {
     medium: string;
     landscape: string;

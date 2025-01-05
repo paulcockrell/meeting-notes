@@ -98,6 +98,7 @@ export namespace note {
 
 export namespace pexels {
     export interface Photo {
+        id: number
         src: {
             medium: string
             landscape: string
