@@ -11,5 +11,9 @@
   },
   "dependencies": {
     "encore.dev": "^1.45.2"
+  },
+  "scripts": {
+    "test": "vitest",
+    "gen": "encore gen client --output=./frontend/src/lib/client.ts --env=local"
   }
 }
