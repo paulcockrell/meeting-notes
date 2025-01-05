@@ -38,8 +38,6 @@ export const searchPhoto = api(
     }
 
     const json = await response.json();
-    console.log("XXX", json);
-
     return json as SearchPhotoResponse;
   },
 );
